@@ -10,13 +10,13 @@ class Heroi{
         let ataque;
 
         switch (this.tipo) {
-            case 'mago':
+            case 'maga':
               ataque = 'magia';
               break;
-            case 'guerreiro':
+            case 'guerreira':
               ataque = 'espada';
               break;
-            case 'monge':
+            case 'monja':
               ataque = ' artes marciais';
               break;
             case 'ninja':
@@ -27,24 +27,24 @@ class Heroi{
           } 
     
 
-   console.log(`O ${this.tipo} atacou usando ${ataque}`);
+   console.log(`A ${this.tipo} atacou usando ${ataque}`);
 
     }
 }
 
 
 
-const mago  = new Heroi("Greice", 35, "mago")
-const guerreiro = new Heroi("Greice", 35, "guerreiro")
-const monge  = new Heroi("Greice", 35, "monge")
-const ninja  = new Heroi("Greice", 35, "ninja")
-const soldado = new Heroi("Greice", 35, "soldado")
+const maga  = new Heroi("Greice", 35, "maga")
+const guerreira = new Heroi("Alana", 35, "guerreira")
+const monja  = new Heroi("Coen", 35, "monja")
+const ninja  = new Heroi("Sakura ", 35, "ninja")
+const soldada = new Heroi("Maria Quitéria", 35, "soldada")
 
-mago.atacar()
-guerreiro.atacar()
-monge.atacar()
+maga.atacar()
+guerreira.atacar()
+monja.atacar()
 ninja.atacar()
-soldado.atacar()
+soldada.atacar()
 
 
 
