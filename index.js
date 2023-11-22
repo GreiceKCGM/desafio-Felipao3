@@ -7,9 +7,14 @@ class Heroi{
     }
 
     atacar(){
-        let ataque;
+        const ataque =
+            this.tipo === "mago" ? "magia" :
+            this.tipo === "guerreira"? "espada" :
+            this.tipo === "monja"? " artes marciais" :
+            this.tipo === "ninja"? "shuriken" :
+            "um ataque indefinido";
 
-        switch (this.tipo) {
+        /*switch (this.tipo) {
             case 'maga':
               ataque = 'magia';
               break;
@@ -24,7 +29,7 @@ class Heroi{
               break;
             default:
               ataque = 'um ataque indefinido';
-          } 
+          } */
     
 
    console.log(`A ${this.tipo} atacou usando ${ataque}`);
